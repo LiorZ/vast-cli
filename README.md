@@ -17,6 +17,7 @@ Our Python SDK is maintained through a separate repository [vast-ai/vast-sdk](ht
 7. [Host Machine Testing with `vast_machine_tester.py`](#host-machine-testing-with-vast_machine_testerpy)
 8. [Usage Examples](#usage-examples)
 9. [Tab-Completion](#tab-completion)
+10. [AI Agent Integration](#ai-agent-integration)
 
 ## Quickstart
 It is recommended that you create a dedicated subdirectory to store this script and its related files. For example, you might create a directory named `vid` (short for "Vast Install Directory"):
@@ -179,7 +180,27 @@ The `vast.py` script supports tab-completion in both Bash and Zsh shells if the 
    
 *Note:* Rapid invocations via tab-completion might trigger API rate limits. If you experience issues, please report them in the project's GitHub issues.
 
+## AI Agent Integration
+
+This repository includes a comprehensive skill file for AI agents (such as Claude) to interact with the Vast.ai CLI. The skill provides:
+
+- Complete command documentation and syntax
+- Search query language reference
+- Common workflow patterns
+- Error handling guidance
+- Best practices
+
+**Skill Location**: [.claude/vast-ai-skill.md](.claude/vast-ai-skill.md)
+
+For a quick reference, see [SKILLS.md](SKILLS.md).
+
+AI agents can use this skill to help users:
+- Search for GPU instances with specific requirements
+- Create and manage compute instances
+- Handle data transfer and persistent storage
+- Set up autoscaling deployments
+- Manage team resources and permissions
+
 ---
 
 This documentation should help you get started with the Vast.ai CLI tools and understand the available commands and usage patterns. For more detailed information, refer to the inline help provided by each command.
-```
